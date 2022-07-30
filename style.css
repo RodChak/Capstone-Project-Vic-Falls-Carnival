@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  color: #272a31;
+}
+
+p,
+h3,
+h4,
+h5 {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: "COCOGOOSE", Georgia, serif;
+}
+
+/* Desktop First navigation bar  */
+header {
+  width: 100%;
+  min-height: 100vh;
+}
+
+nav ul {
+  display: flex;
+  column-gap: 2rem;
+}
+
+#top-bar ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 1.2rem;
+  font-size: 0.7rem;
+  padding: 0.3rem 10% 0.3rem 10%;
+  text-align: center;
+  background-color: rgb(59, 59, 59);
+  color: #d3d3d3;
+}
+
+#top-bar ul li {
+  cursor: pointer;
+}
+
+/* Desktop Second navigation bar  */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10% 0 10%;
+  background-color: #fff;
+}
+
+#logo {
+  width: 5rem;
+  cursor: pointer;
+}
+
+#header-content {
+  padding: 0 10% 0 10%;
+  margin-top: 10vh;
+}
+
+nav {
+  display: flex;
+  column-gap: 3rem;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #272a31;
+  font-size: 0.8rem;
+}
+
+nav ul li a:hover {
+  color: #ec5242;
+}
+
+#buy-tickets-btn {
+  border: 3px solid #ec5242;
+  padding: 0.4rem;
+}
+
+#buy-tickets-btn:hover {
+  background-color: #ec5242;
+}
+
+#buy-tickets-btn:active {
+  transform: translateY(4px);
+}
+
+#header-background {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6)), url(./Images/bg1.jpeg);
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -7;
+}
+
+#intro-line {
+  font-size: 2rem;
+  margin-bottom: 4vh;
+  background-image: url(./Images/bg2.jpeg);
+
+  /* background-clip: text; */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#main-heading {
+  font-size: 4rem;
+  line-height: 4rem;
+  width: 53vw;
+  background-image: url(./Images/bg2.jpeg);
+
+  /* background-clip: text; */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#header-discription {
+  font-size: 1rem;
+  width: 47vw;
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+  padding: 1vh 2vw;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  /* border: 0.2rem solid white; */
+}
+
+#date {
+  font-size: 2rem;
+}
+
+#address {
+  font-size: 1.5rem;
+}
+
+/* The main program section  */
+#program-section {
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: space-around; */
+  align-items: center;
+  background-image: url(./Images/background-tile.jpg);
+  height: auto;
+  padding: 0 10% 10vh 10%;
+}
+
+#program-section h3 {
+  color: #d3d3d3;
+  margin-top: 8vh;
+  margin-bottom: 1vh;
+}
+
+.underline {
+  width: 3vw;
+  height: 1px;
+  background-color: #ec5242;
+}
+
+#programs {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  column-gap: 0.3vw;
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  height: auto;
+  width: 15vw;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.program-card:hover {
+  border: 2px solid #d3d3d3;
+}
+
+.program-card h4 {
+  color: #ec5242;
+}
+
+.program-card p {
+  color: #d3d3d3;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#see-more-btn {
+  color: #d3d3d3;
+  text-underline-offset: 1px;
+  margin-top: 5vh;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#see-more-btn:hover {
+  color: #ec5242;
+}
+
+#see-more-btn:active {
+  transform: translateY(4px);
+}
+
+#buy-ticket-btn2 {
+  display: none;
+}
+
+/* The speakers section  */
+#speakers-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* background-color: red; */
+  align-items: center;
+  padding: 2% 10% 4% 10%;
+  min-height: 100vh;
+}
+
+#speakers-section h3 {
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+}
+
+.underline1 {
+  width: 3vw;
+  height: 1px;
+  background-color: #ec5242;
+  margin-bottom: 5vh;
+}
+
+.speakers-row {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: space-between;
+}
+
+.speaker-card {
+  width: 38vw;
+  height: 25vh;
+  margin: 3px;
+  display: flex;
+  column-gap: 2vw;
+  overflow: hidden;
+}
+
+.speakers-picture {
+  width: 30%;
+  height: 70%;
+  margin-top: 3.2%;
+  margin-left: 3.2%;
+  z-index: 2;
+}
+
+.checkerbox {
+  position: absolute;
+  height: 10%;
+  width: 6vw;
+  z-index: -2;
+}
+
+.speakers-bio {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+
+  /* z-index: 10; */
+  margin-top: 2%;
+}
+
+.speakers-bio h5 {
+  color: #272a31;
+  font-size: 1.2rem;
+
+  /* font-weight: 900; */
+}
+
+.speakers-title {
+  color: #ec5242;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.speakers-discription {
+  color: #272a31;
+  margin-top: 2vh;
+  font-size: 0.8rem;
+}
+
+.more-btn {
+  display: none;
+}
+
+/* The patners section */
+#patners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8vh 0;
+  height: auto;
+  background-color: rgb(59, 58, 58);
+}
+
+#patners-section h3 {
+  color: rgb(201, 200, 200);
+  margin-bottom: 2vh;
+  font-size: 1.6rem;
+}
+
+#patner-logos {
+  padding-left: 5vw;
+}
+
+footer img {
+  width: 8vw;
+}
+
+#patner-logos img {
+  width: 10vw;
+  margin-right: 5vw;
+}
+
+/* Footer section */
+footer {
+  display: flex;
+  column-gap: 3%;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+}
+
+#copyright {
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  #top-bar {
+    display: none;
+  }
+
+  .navbar {
+    position: fixed;
+    left: -100%;
+    flex-direction: column;
+    background: #ec5242;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    transition: 0.05s;
+    justify-content: flex-start;
+    row-gap: 2vh;
+    padding-top: 8vh;
+  }
+
+  .navbar.active {
+    left: 0;
+    top: 0;
+  }
+
+  #logo {
+    width: 35vw;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    color: #d3d3d3;
+    align-items: center;
+  }
+
+  nav ul li a {
+    color: #d3d3d3;
+    font-size: 3rem;
+  }
+
+  #oneline {
+    display: flex;
+    padding-left: 10vw;
+    padding-top: 1vh;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+
+    /* left: 10vw; */
+    display: block;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #272a31;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+  }
+
+  /* code for making hamburger menu turn into an X */
+  .menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-icon.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+
+  #intro-line {
+    font-size: 0.7rem;
+    margin-bottom: 3vh;
+  }
+
+  #main-heading {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 100vw;
+  }
+
+  #header-content h1 {
+    width: 80vw;
+  }
+
+  #header-discription {
+    font-size: 0.8rem;
+    width: 80vw;
+    padding-left: 4vw;
+  }
+
+  #date {
+    font-size: 1.3rem;
+  }
+
+  #address {
+    font-size: 0.9rem;
+  }
+
+  #programs {
+    flex-direction: column;
+    row-gap: 1.2vh;
+  }
+
+  .program-card {
+    flex-direction: row;
+    width: 93vw;
+  }
+
+  #see-more-btn {
+    display: none;
+  }
+
+  #buy-ticket-btn2 {
+    display: block;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    padding: 1rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: #d3d3d3;
+    background-color: #ec5242;
+  }
+
+  #speakers-section {
+    min-height: auto;
+  }
+
+  .speakers-row {
+    flex-direction: column;
+  }
+
+  .speaker-card {
+    width: 78vw;
+  }
+
+  .more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    border-radius: 6px;
+    padding: 2%;
+    margin-top: 3vh;
+    cursor: pointer;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .show-rest {
+    display: block;
+  }
+
+  .hide-btn {
+    display: none;
+  }
+
+  #patners-section h3 {
+    color: rgb(201, 200, 200);
+    margin-bottom: 0;
+  }
+
+  #patner-logos {
+    padding-left: 5vw;
+    padding-top: 2vh;
+  }
+}
