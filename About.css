@@ -139,12 +139,22 @@ nav ul li a:hover {
   color: #ec5242;
   font-size: 2rem;
   width: 50%;
-  margin-bottom: 8vh;
+  margin-bottom: 2vh;
 } 
 
+.underline {
+  width: 3vw;
+  height: 1px;
+  background-color: #ec5242;
+ 
+}
+
 #about-intro-description {
+  margin-top: 6vh;
   margin-bottom: 10vh;
   width: 70vw;
+  padding: 2vh 3vw;
+  background-color: rgba(255,255,255,0.3);
 }
 
 #contact-line {
@@ -172,11 +182,12 @@ nav ul li a:hover {
 
 #about-logo h2{
   font-size: 1.5rem;
-  margin-bottom: 8vh;
+  margin-bottom: 2vh;
   width: 60vw;
 }
 
 #about-logo p {
+  margin-top: 2vh;
   width: 60vw;
   margin-bottom: 5vh;
 }
@@ -201,7 +212,8 @@ nav ul li a:hover {
 
 #gallery-section p {
   font-size: 0.8rem;
-  margin: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 6vh;
 }
 
 #past-events {
@@ -214,7 +226,7 @@ nav ul li a:hover {
 }
 
 #past-events img {
-  width: 24vw;
+  width: 35vw;
   height: 29vh;
 }
 
@@ -222,7 +234,7 @@ nav ul li a:hover {
   position: absolute;
   z-index: 4;
   height: 29vh;
-  width: 24vw;
+  width: 35vw;
   mix-blend-mode: multiply;
   background-color: #ec5242;
   backdrop-filter: blur(1px);
@@ -232,7 +244,7 @@ div.text-overlay {
   position: absolute;
   z-index: 10;
   height: 29%;
-  width: 35%; 
+  width: 50%; 
   margin-top: 8vh;
   /* margin: auto; */
   color: #d3d3d3;
@@ -247,7 +259,7 @@ div.text-overlay {
 
 .text-overlay p {
   font-size: 2rem;
-  width: 50%;
+  width: 70%;
   /* height: 29%; */
   line-height: 1rem;
  
