@@ -12,8 +12,6 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   menuBar.classList.remove('active');
 }));
 
-
-
 const speakers = [
   {
     artist: 'Drake',
@@ -51,53 +49,7 @@ const speakers = [
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, perspiciatis dolor fugiat eum repellendus ullam sit adipisci quasi cum.',
     image: './Images/kanye.jpg',
   },
-  // Over here add one more speaker
 ];
-
-// Add one more speaker at index 5
-
-// function generateSpeakers(index) {
-//   const speakerCard = document.createElement('div');
-//   speakerCard.className = 'speaker-card';
-
-//   const checkerbox = document.createElement('img');
-//   checkerbox.className = 'checkerbox';
-//   checkerbox.src = './Images/checkerbox.png';
-
-//   const speakerImage = document.createElement('img');
-//   speakerImage.className = 'speakers-picture';
-//   speakerImage.src = speakers[index].image;
-
-//   const speakerBio = document.createElement('div');
-//   speakerBio.className = 'speakers-bio';
-
-//   const speakerName = document.createElement('h5');
-//   speakerName.innerText = speakers[index].artist;
-
-//   const speakerTitle = document.createElement('p');
-//   speakerTitle.innerText = speakers[index].genre;
-//   speakerTitle.className = 'speakers-title';
-
-//   const speakerDesc = document.createElement('p');
-//   speakerDesc.innerText = speakers[index].bio;
-//   speakerDesc.className = 'speakers-discription';
-
-//   speakerBio.append(speakerName, speakerTitle, speakerDesc);
-
-//   speakerCard.append(checkerbox, speakerImage, speakerBio);
-
-//   return speakerCard;
-// }
-
-// const speakerSection = document.getElementById('speakers-section');
-
-// // for (let i = 0; i < speakers.length; i += 2) {
-// //   const speakerRow = document.createElement('div');
-// //   speakerRow.className = 'speakers-row';
-
-// //   speakerRow.append(generateSpeakers(i), generateSpeakers(i + 1));
-//   speakerSection.appendChild(speakerRow);
-// }
 
 document.getElementById('speakers-section').innerHTML = `
 <h3>Music Artists</h3>

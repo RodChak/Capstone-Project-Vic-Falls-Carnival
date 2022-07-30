@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("http://fonts.cdnfonts.com/css/cocogoose");
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -15,15 +15,14 @@ body {
 }
 
 p,
-h2
-h3,
+h2 h3,
 h4,
 h5 {
   font-family: "Lato", sans-serif;
   line-height: 1.5;
 }
 
-h1{
+h1 {
   font-family: "COCOGOOSE", Georgia, serif;
 }
 
@@ -33,8 +32,12 @@ header {
   width: 100%;
 }
 
+nav ul {
+  display: flex;
+  column-gap: 2rem;
+}
 
-#top-bar ul{
+#top-bar ul {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -61,11 +64,9 @@ header {
 }
 
 #logo {
-    width: 5rem;
-    cursor: pointer;
+  width: 5rem;
+  cursor: pointer;
 }
-
-
 
 #header-content {
   padding: 0 10% 0 10%;
@@ -75,11 +76,6 @@ nav {
   display: flex;
   column-gap: 3rem;
   align-items: center;
-}
-
-nav ul {
-  display: flex;
-  column-gap: 2rem;
 }
 
 nav ul li a {
@@ -96,7 +92,7 @@ nav ul li a:hover {
   color: #ec5242;
 }
 
-.menu-icon{
+.menu-icon {
   display: none;
 }
 
@@ -114,15 +110,15 @@ nav ul li a:hover {
 }
 
 #header-background {
-  background-image:linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.6)),url(./Images/bg2.jpeg);
-  background-size: cover; 
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6)), url(./Images/bg2.jpeg);
+  background-size: cover;
   position: absolute;
   width: 100%;
   height: 87vh;
   z-index: -7;
 }
 
-#about-intro{
+#about-intro {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,13 +136,12 @@ nav ul li a:hover {
   font-size: 2rem;
   width: 50%;
   margin-bottom: 2vh;
-} 
+}
 
 .underline {
   width: 3vw;
   height: 1px;
   background-color: #ec5242;
- 
 }
 
 #about-intro-description {
@@ -154,13 +149,13 @@ nav ul li a:hover {
   margin-bottom: 10vh;
   width: 70vw;
   padding: 2vh 3vw;
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 #contact-line {
   margin-bottom: 1vh;
   width: 70vw;
-  font-weight:300;
+  font-weight: 300;
 }
 
 #contact-email {
@@ -171,7 +166,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-#about-logo{
+#about-logo {
   display: flex;
   flex-direction: column;
   padding: 10vh 10% 0 10%;
@@ -180,16 +175,26 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-#about-logo h2{
+#about-logo h2 {
   font-size: 1.5rem;
   margin-bottom: 2vh;
   width: 60vw;
+}
+
+.text-overlay p {
+  font-size: 2rem;
+  width: 70%;
+  line-height: 1rem;
 }
 
 #about-logo p {
   margin-top: 2vh;
   width: 60vw;
   margin-bottom: 5vh;
+}
+
+footer img {
+  width: 8vw;
 }
 
 #about-logo img {
@@ -205,7 +210,7 @@ nav ul li a:hover {
   padding: 0 10% 15vh 10%;
 }
 
-#gallery-section h2{
+#gallery-section h2 {
   font-size: 1.5rem;
   margin: 2vh;
 }
@@ -244,8 +249,9 @@ div.text-overlay {
   position: absolute;
   z-index: 10;
   height: 29%;
-  width: 50%; 
+  width: 50%;
   margin-top: 8vh;
+
   /* margin: auto; */
   color: #d3d3d3;
 }
@@ -256,15 +262,6 @@ div.text-overlay {
   width: 70%;
   line-height: 0rem;
 }
-
-.text-overlay p {
-  font-size: 2rem;
-  width: 70%;
-  /* height: 29%; */
-  line-height: 1rem;
- 
-}
-
 
 /* Footer section */
 footer {
@@ -279,13 +276,7 @@ footer {
 
 #copyright {
   font-weight: 600;
-  
 }
-
-footer img {
-  width: 8vw;
-}
-
 
 @media (max-width: 768px) {
   #top-bar {
@@ -299,12 +290,13 @@ footer img {
     margin-top: 1vh;
   }
 
-  .menu-icon{
-     cursor: pointer;
+  .menu-icon {
+    cursor: pointer;
+
     /* left: 10vw; */
     display: block;
   }
-  
+
   .bar {
     display: block;
     width: 25px;
@@ -315,26 +307,25 @@ footer img {
     transition: all 0.3s ease-in-out;
     border-radius: 6px;
   }
-  
-   /* code for making hamburger menu turn into an X */
+
+  /* code for making hamburger menu turn into an X */
   .menu-icon.active .bar:nth-child(2) {
     opacity: 0;
   }
-  
+
   .menu-icon.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
     background-color: #fff;
   }
-  
+
   .menu-icon.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
     background-color: #fff;
   }
-  
+
   .navbar {
     display: none;
   }
-
 
   .navbar.active {
     position: fixed;
@@ -357,12 +348,12 @@ footer img {
     width: 35vw;
   }
 
-   nav {
-   display: flex;
+  nav {
+    display: flex;
     flex-direction: column;
     row-gap: 2vh;
   }
-  
+
   nav ul {
     display: flex;
     flex-direction: column;
@@ -375,11 +366,10 @@ footer img {
     color: #d3d3d3;
     font-size: 3rem;
   }
-  
 
   #header-background {
-    background-image:linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.6)),url(./Images/bg2.jpeg);
-    background-size: cover; 
+    background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6)), url(./Images/bg2.jpeg);
+    background-size: cover;
     position: absolute;
     width: 100%;
     height: 99vh;
@@ -391,92 +381,94 @@ footer img {
     color: #ec5242;
     font-size: 1.1rem;
   }
-  
+
   #about-intro h1 {
     color: #ec5242;
     font-size: 1.5rem;
     width: 90%;
-  } 
+  }
 
   #about-intro-description {
     font-size: 0.7rem;
     width: 80vw;
   }
-  
+
   #contact-line {
     font-size: 0.7rem;
     width: 80vw;
   }
-  
+
   #contact-email {
     font-size: 0.8rem;
     cursor: pointer;
   }
-  
-  #about-logo{
+
+  #about-logo {
     padding: 17vh 10% 0 10%;
   }
-  
-  #about-logo h2{
+
+  #about-logo h2 {
     font-size: 1rem;
     width: 50vw;
   }
-  
+
+  .text-overlay p {
+    width: 80%;
+  }
+
   #about-logo p {
     width: 80vw;
     font-size: 0.7rem;
   }
-  
+
+  footer img {
+    width: 15vw;
+  }
+
   #about-logo img {
     width: 40vw;
   }
 
   #gallery-section {
-  padding-bottom: 7vh;
+    padding-bottom: 7vh;
   }
-  
-  #gallery-section h2{
+
+  #gallery-section h2 {
     font-size: 1rem;
     margin: 2vh;
-    
   }
-  
+
   #gallery-section p {
     font-size: 0.7rem;
     margin: 5vh;
   }
-  
+
   #past-events {
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  
+
   .image-box {
     cursor: pointer;
   }
-  
+
   #past-events img {
     width: 80vw;
   }
-  
+
   .colour-overlay {
     width: 80vw;
   }
-  
+
   div.text-overlay {
-    width: 80%; 
+    width: 80%;
   }
-  
+
   .text-overlay h3 {
     width: 100%;
   }
-  
-  .text-overlay p {
-    width: 80%;
-   
-  }
-  
+
   #copyright {
     font-size: 0.7rem;
   }
@@ -484,17 +476,4 @@ footer img {
   #rights {
     font-size: 0.7rem;
   }
-  
-  footer img {
-    width: 15vw;
-  }
 }
-
-
-
-
-
-
-
-
-
