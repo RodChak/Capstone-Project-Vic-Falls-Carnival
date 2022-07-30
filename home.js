@@ -27,31 +27,31 @@ const speakers = [
   {
     artist: 'Drake',
     genre: 'hip-hop',
-    bio: 'lorekbsakjcb sakcbksadbc kasb kcbauchb ashbcuioasgbc khgsdcougqc hqowgbcdquwo ohboucbwea ohwqochoqwb ohoqwhbcq ohqwdb qwoc ohqdoqwbc',
+    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, perspiciatis dolor fugiat eum repellendus ullam sit adipisci quasi cum.',
     image: './Images/drake.jpg',
   },
   {
     artist: 'Taylor Swift',
     genre: 'Country',
-    bio: 'lorekbsakjcb sakcbksadbc kasb kcbauchb ashbcuioasgbc khgsdcougqc hqowgbcdquwo ohboucbwea ohwqochoqwb ohoqwhbcq ohqwdb qwoc ohqdoqwbc',
+    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, perspiciatis dolor fugiat eum repellendus ullam sit adipisci quasi cum.',
     image: './Images/Tyler-Swift.jpg',
   },
   {
     artist: 'The weekend',
     genre: 'Rnb',
-    bio: 'lorekbsakjcb sakcbksadbc kasb kcbauchb ashbcuioasgbc khgsdcougqc hqowgbcdquwo ohboucbwea ohwqochoqwb ohoqwhbcq ohqwdb qwoc ohqdoqwbc',
+    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, perspiciatis dolor fugiat eum repellendus ullam sit adipisci quasi cum.',
     image: './Images/theweekend.jpg',
   },
   {
     artist: 'Beyonce',
     genre: 'Pop',
-    bio: 'lorekbsakjcb sakcbksadbc kasb kcbauchb ashbcuioasgbc khgsdcougqc hqowgbcdquwo ohboucbwea ohwqochoqwb ohoqwhbcq ohqwdb qwoc ohqdoqwbc',
+    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, perspiciatis dolor fugiat eum repellendus ullam sit adipisci quasi cum.',
     image: './Images/beyonce.jpg',
   },
   {
     artist: 'Rihanna',
     genre: 'Rock',
-    bio: 'lorekbsakjcb sakcbksadbc kasb kcbauchb ashbcuioasgbc khgsdcougqc hqowgbcdquwo ohboucbwea ohwqochoqwb ohoqwhbcq ohqwdb qwoc ohqdoqwbc',
+    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, perspiciatis dolor fugiat eum repellendus ullam sit adipisci quasi cum.',
     image: './Images/rihanna-3.jpg',
   },
 
