@@ -27,7 +27,6 @@ h2 {
   font-family: "COCOGOOSE", Georgia, serif;
 }
 
-
 /* Desktop First navigation bar  */
 header {
   width: 100%;
@@ -153,8 +152,6 @@ nav ul li a:hover {
   font-size: 1.5rem;
 }
 
-
-
 /* The main program section  */
 #program-section {
   display: flex;
@@ -230,7 +227,6 @@ nav ul li a:hover {
 #buy-ticket-btn2 {
   display: none;
 }
-
 
 /* The speakers section  */
 #speakers-section {
@@ -347,7 +343,6 @@ footer img {
   width: 10vw;
   margin-right: 5vw;
 }
-
 
 /* Footer section */
 footer {
